@@ -21,7 +21,9 @@ Create build user and environment
 As the build user in its home, clone scrapyd in the SOURCES dir:
 ```bash
   cd rpmbuild/SOURCES
-  git clone https://github.com/scrapy/scrapyd.git scrapyd
+  git clone https://github.com/scrapy/scrapyd.git
+  # or until pull request included in official repo:
+  # git clone -b centos-rpm https://github.com/medialab/scrapyd.git
   tar czvf scrapyd.tar.gz scrapyd
   cd ..
   cp SOURCES/scrapyd/centos/SPECS SPECS/scrapyd.spec 
