@@ -5,8 +5,6 @@ matrix:
     exclude:
         - env: TRAVISBUG="#1027"
     include:
-        - python: "2.6"
-          env: BUILDENV=lucid
         - python: "2.7"
           env: BUILDENV=precise
         - python: "2.7"
@@ -17,8 +15,8 @@ matrix:
         - python: "pypy"
           env: BUILDENV=latest
 install:
-    - pip install --use-mirrors -r .travis/requirements-$BUILDENV.txt
-    - pip install --use-mirrors .
+    - pip install -r .travis/requirements-$BUILDENV.txt
+    - pip install .
 script:
     - trial scrapyd
 notifications:
