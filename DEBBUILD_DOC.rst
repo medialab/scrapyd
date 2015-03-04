@@ -24,9 +24,8 @@ For instance for Debian:
 
   mkdir build-scrapy
   cd build-scrapy
-  git clone https://github.com/medialab/scrapyd.git scrapyd
+  git clone -b medialab-debian https://github.com/medialab/scrapyd.git scrapyd
   cd scrapyd
-  git checkout medialab-debian
   dpkg-buildpackage -us -uc
   
 
