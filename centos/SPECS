@@ -2,7 +2,7 @@
 %define version 1.0.1
 %define unmangled_version 1.0.1
 %define unmangled_version 1.0.1
-%define release 2%{?dist}
+%define release 3%{?dist}
 
 Summary: A service for running Scrapy spiders, with an HTTP API
 Name: %{name}
