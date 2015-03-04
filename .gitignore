@@ -7,3 +7,11 @@ docs/_build
 venv
 dist
 build
+
+debian/files
+debian/scrapyd/
+debian/scrapyd-deploy/
+debian/tmp/
+debian/*debhelper*
+debian/scrapyd*substvars
+
