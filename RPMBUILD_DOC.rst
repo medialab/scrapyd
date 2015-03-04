@@ -9,6 +9,7 @@ Install build packages:
 
 .. code-block:: bash
 
+  sudo yum update
   sudo yum groupinstall "Fedora Packager"
 
 Create build user:
@@ -34,10 +35,10 @@ As build user in its home, clone scrapyd in the SOURCES dir:
 .. code-block:: bash
 
   cd rpmbuild/SOURCES
-  git clone https://github.com/scrapy/scrapyd.git scrapyd
+  git clone -b medialab-centos https://github.com/medialab/scrapyd.git scrapyd
   tar czvf scrapyd.tar.gz scrapyd
   cp scrapyd/centos/SPECS ../SPECS/scrapyd.spec
   rpmbuild -ba ~/rpmbuild/SPECS/scrapyd.spec
 
-Collect the package rpm in rpmbuild/RPMS/ and the source rpm in rpmbuild/SRPMS/ and publish in online repository.
+Collect the .rpm package in rpmbuild/RPMS/ and the source .rpm package in rpmbuild/SRPMS/ and publish in online repository.
 
