@@ -22,12 +22,12 @@ For instance for Debian:
 
 .. code-block:: bash
 
-  mkdir build-scrapy
-  cd build-scrapy
+  mkdir build-scrapyd
+  cd build-scrapyd
   git clone -b medialab-debian https://github.com/medialab/scrapyd.git scrapyd
   cd scrapyd
   dpkg-buildpackage -us -uc
   
 
-Collect the .deb package in the parent dir of scrapyd (build-scrapy in the above example).
+Collect the .deb package in the parent dir of scrapyd (build-scrapyd in the above example).
 
